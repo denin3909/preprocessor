@@ -11,5 +11,27 @@ A lightweight, modular C preprocessor built from scratch in C. It processes a `.
   - Function-like macros with arguments (e.g., `#define SQUARE(x) ((x)*(x))`)
 - **Automated Build (`Makefile`)**: Compiles all modular `.c` and `.h` files into the `mypreprocessor` executable.
 
-To compile the project - make
-To run the project     -  .\mypreprocessor.exe inputfile.c(for windows)
+## Build & Run
+
+1. **Compile the project:**
+   ```bash
+   make
+   ```
+
+2. **Run the preprocessor on a C source file:**
+   - **Linux / macOS / Git Bash:**
+     ```bash
+     ./mypreprocessor inputfile.c
+     ```
+   - **Windows (PowerShell / Command Prompt):**
+     ```bat
+     .\mypreprocessor.exe inputfile.c
+     ```
+
+3. **Output:**
+   Generates `inputfile.i` in the same directory containing the preprocessed source code.
+
+4. **Clean build artifacts:**
+   ```bash
+   make clean
+   ```
